@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<img class="books" src="https://s26162.pcdn.co/wp-content/uploads/2019/07/books.jpg">
+<form action=" {{ url_for('results') }}" method="post">
+    <label for="genre">Genre</label>
+    <input type="text" id="genre" name="genre">
+    <button class="submit_button" type="submit">Submit</button>
+    <button class="surprise_button" type="submit">Surprise Me!</button>
+
+</form>
+{% endblock %}
